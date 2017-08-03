@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Wenn Sie Ihre Position auf der Karte sehen wollen, aktivieren Sie die Ortungsdienste.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Wenn Sie Ihre Position auf der Karte sehen wollen, aktivieren Sie die Ortungsdienste.</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

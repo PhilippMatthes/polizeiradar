@@ -14,6 +14,11 @@
 		BECC97821F31DBF300990CE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECC97801F31DBF300990CE2 /* LaunchScreen.storyboard */; };
 		BECC978D1F31DBF400990CE2 /* PolizeimeldungenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC978C1F31DBF400990CE2 /* PolizeimeldungenTests.swift */; };
 		BECC97981F31DBF400990CE2 /* PolizeimeldungenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC97971F31DBF400990CE2 /* PolizeimeldungenUITests.swift */; };
+		BECC97A61F31DC1400990CE2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECC97A51F31DC1400990CE2 /* CoreLocation.framework */; };
+		BECC97A81F31DC1C00990CE2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECC97A71F31DC1C00990CE2 /* MapKit.framework */; };
+		BECC97AA1F31DD1200990CE2 /* AnnotationParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC97A91F31DD1200990CE2 /* AnnotationParser.swift */; };
+		BECC97AC1F31E44700990CE2 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC97AB1F31E44700990CE2 /* Annotation.swift */; };
+		BECC97AE1F31FD6400990CE2 /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECC97AD1F31FD6400990CE2 /* Receiver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		BECC97931F31DBF400990CE2 /* PolizeimeldungenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PolizeimeldungenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECC97971F31DBF400990CE2 /* PolizeimeldungenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolizeimeldungenUITests.swift; sourceTree = "<group>"; };
 		BECC97991F31DBF400990CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECC97A51F31DC1400990CE2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BECC97A71F31DC1C00990CE2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BECC97A91F31DD1200990CE2 /* AnnotationParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationParser.swift; sourceTree = "<group>"; };
+		BECC97AB1F31E44700990CE2 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		BECC97AD1F31FD6400990CE2 /* Receiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receiver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECC97A81F31DC1C00990CE2 /* MapKit.framework in Frameworks */,
+				BECC97A61F31DC1400990CE2 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +89,8 @@
 		BECC976B1F31DBF300990CE2 = {
 			isa = PBXGroup;
 			children = (
+				BECC97A71F31DC1C00990CE2 /* MapKit.framework */,
+				BECC97A51F31DC1400990CE2 /* CoreLocation.framework */,
 				BECC97761F31DBF300990CE2 /* Polizeimeldungen */,
 				BECC978B1F31DBF400990CE2 /* PolizeimeldungenTests */,
 				BECC97961F31DBF400990CE2 /* PolizeimeldungenUITests */,
@@ -99,6 +113,9 @@
 			children = (
 				BECC97771F31DBF300990CE2 /* AppDelegate.swift */,
 				BECC97791F31DBF300990CE2 /* ViewController.swift */,
+				BECC97A91F31DD1200990CE2 /* AnnotationParser.swift */,
+				BECC97AB1F31E44700990CE2 /* Annotation.swift */,
+				BECC97AD1F31FD6400990CE2 /* Receiver.swift */,
 				BECC977B1F31DBF300990CE2 /* Main.storyboard */,
 				BECC977E1F31DBF300990CE2 /* Assets.xcassets */,
 				BECC97801F31DBF300990CE2 /* LaunchScreen.storyboard */,
@@ -193,6 +210,7 @@
 				TargetAttributes = {
 					BECC97731F31DBF300990CE2 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = S36925NV4E;
 					};
 					BECC97871F31DBF400990CE2 = {
 						CreatedOnToolsVersion = 7.3;
@@ -256,7 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECC97AA1F31DD1200990CE2 /* AnnotationParser.swift in Sources */,
 				BECC977A1F31DBF300990CE2 /* ViewController.swift in Sources */,
+				BECC97AE1F31FD6400990CE2 /* Receiver.swift in Sources */,
+				BECC97AC1F31E44700990CE2 /* Annotation.swift in Sources */,
 				BECC97781F31DBF300990CE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Polizeimeldungen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Polizeimeldungen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Polizeimeldungen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Polizeimeldungen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
