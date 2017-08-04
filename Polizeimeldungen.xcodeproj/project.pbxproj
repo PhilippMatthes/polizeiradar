@@ -211,13 +211,16 @@
 					BECC97731F31DBF300990CE2 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = S36925NV4E;
+						LastSwiftMigration = 0830;
 					};
 					BECC97871F31DBF400990CE2 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 						TestTargetID = BECC97731F31DBF300990CE2;
 					};
 					BECC97921F31DBF400990CE2 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 						TestTargetID = BECC97731F31DBF300990CE2;
 					};
 				};
@@ -429,6 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Polizeimeldungen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -443,6 +447,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Polizeimeldungen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -454,6 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PolizeimeldungenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polizeimeldungen.app/Polizeimeldungen";
 			};
 			name = Debug;
@@ -466,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PolizeimeldungenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polizeimeldungen.app/Polizeimeldungen";
 			};
 			name = Release;
@@ -477,6 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PolizeimeldungenUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Polizeimeldungen;
 			};
 			name = Debug;
@@ -488,6 +496,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PolizeimeldungenUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Polizeimeldungen;
 			};
 			name = Release;
@@ -511,6 +520,7 @@
 				BECC979E1F31DBF400990CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BECC979F1F31DBF400990CE2 /* Build configuration list for PBXNativeTarget "PolizeimeldungenTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +529,7 @@
 				BECC97A11F31DBF400990CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BECC97A21F31DBF400990CE2 /* Build configuration list for PBXNativeTarget "PolizeimeldungenUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +538,7 @@
 				BECC97A41F31DBF400990CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

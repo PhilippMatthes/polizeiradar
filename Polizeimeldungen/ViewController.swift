@@ -34,34 +34,34 @@ class ViewController: UIViewController {
     func requestLocationAccess() {
         let status = CLLocationManager.authorizationStatus()
         switch status {
-        case .AuthorizedAlways, .AuthorizedWhenInUse:
+        case .authorizedAlways, .authorizedWhenInUse:
             return
-        case .Denied, .Restricted:
+        case .denied, .restricted:
             print("Location access denied.")
         default:
             locationManager.requestWhenInUseAuthorization()
         }
     }
     
-    func addAnnotations(annotations: [Annotation]) {
+    func addAnnotations(_ annotations: [Annotation]) {
         mapView?.addAnnotations(annotations)
     }
 
 
 }
 extension ViewController: MKMapViewDelegate {
-    func mapView(mapView: MKMapView, viewForAnnotation: MKAnnotation, calloutAccessoryControlTapped control: UIControl) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewForAnnotation: MKAnnotation, calloutAccessoryControlTapped control: UIControl) -> MKAnnotationView? {
         
         if viewForAnnotation is MKUserLocation {
             return nil
         }
         else {
-            let annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier("annotationView") ?? MKAnnotationView()
+            let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "annotationView") ?? MKAnnotationView()
             
-            let rightButton = UIButton(type: .DetailDisclosure)
+            let rightButton = UIButton(type: .detailDisclosure)
             annotationView.rightCalloutAccessoryView = rightButton
-            rightButton.addTarget(self, action: #selector(ViewController.buttonPressed(_:)) , forControlEvents: .TouchUpInside)
-            annotationView.userInteractionEnabled = true
+            rightButton.addTarget(self, action: #selector(ViewController.buttonPressed(_:)) , for: .touchUpInside)
+            annotationView.isUserInteractionEnabled = true
             annotationView.canShowCallout = true
             annotationView.image = UIImage(named: "location icon")
             
@@ -69,7 +69,7 @@ extension ViewController: MKMapViewDelegate {
             if control == annotationView.rightCalloutAccessoryView{
                 print(annotationView.annotation!.title) // your annotation's title
                 //Perform a segue here to navigate to another viewcontroller
-                self.performSegueWithIdentifier("yourSegue", sender: rightButton)
+                self.performSegue(withIdentifier: "yourSegue", sender: rightButton)
             }
             
             
@@ -77,7 +77,7 @@ extension ViewController: MKMapViewDelegate {
         }
     }
     
-    func buttonPressed(sender: UIButton!) {
+    func buttonPressed(_ sender: UIButton!) {
         print("hello")
     }
 }

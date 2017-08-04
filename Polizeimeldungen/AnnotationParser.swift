@@ -11,7 +11,7 @@ import MapKit
 
 class AnnotationParser {
     // longitude, latitude, title, subtitle
-    func getAnnotations(data: [(Double,Double,String,String)]) -> [Annotation]{
+    func getAnnotations(_ data: [(Double,Double,String,String)]) -> [Annotation]{
         
         var output = [Annotation]()
         
